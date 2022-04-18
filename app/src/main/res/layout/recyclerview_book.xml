@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageView_BookCover"
+                android:scaleType="center"/>
+
+            <TextView
+                android:id="@+id/textView_BookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HTML and CSS"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/imageView_BookCover"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/textView_BookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark angle"
+                android:layout_below="@id/textView_BookTitle"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

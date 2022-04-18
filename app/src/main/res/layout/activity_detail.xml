@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageViewDetails"
+            android:scaleType="center"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewDetails"
+            android:id="@+id/rlHeader">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="HTML AND CSS"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/textViewAuthor"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:text="Martin Luther"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/favorite_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:mfb_animate_favorite="true"
+                app:mfb_animate_unfavorite="true"
+                app:mfb_bounce_duration="300"
+                app:mfb_type="heart"
+                app:mfb_size="50"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlHeader"
+            android:fontFamily="@font/nunito_light"
+            android:text="Book that let make you undrestant basic of designing and overall view of how design system works."
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCheckAvailability"
+            android:background="@drawable/rounded_btn3"
+            android:layout_below="@id/textViewDescription"
+            android:textColor="@color/colorFont"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Check Availability" />
+    </RelativeLayout>
+</LinearLayout>

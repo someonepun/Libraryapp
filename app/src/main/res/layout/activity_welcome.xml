@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:id="@+id/reLativeLayoutProfile"
+    tools:context=".activities.WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/topLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:src="@drawable/ishelf_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLogo"
+        android:layout_margin="20dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Welcome to\nishelf."
+            android:textColor="@color/colorFont"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayoutTop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Log in to ishelf"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/rounded_btn2"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textColor="@color/colorFont" />
+
+        <TextView
+            android:id="@+id/textViewLaw"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="By tapping Continue, I agree to ishelf's Term of Services and Privacy Policy."
+            android:textAlignment="center"
+            android:textColor="@color/colorFont" />
+    </LinearLayout>
+</RelativeLayout>
